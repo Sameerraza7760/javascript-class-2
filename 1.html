@@ -1,0 +1,234 @@
+
+<!-- /// class1 -->
+
+
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" class="heading1" >
+        Sameer
+    </h1>
+    <p id="para" class="para2">
+    Lorem ipsum dolor sit 
+    <span style="display: none" > amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam 
+        voluptatem </span>
+        facere possimus aperiam consequatur, omnis sit? Alias, explicabo!
+    </p>
+    <h2>Ahsan  Khan</h2>
+    <h2>Sameer</h2>
+    
+    <input type="password">
+
+    <ol>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">Three</li>
+
+    </ol>
+</body>
+</html> -->
+
+
+
+<!-- document.getElementById('heading').className
+'heading1'
+document.getElementById('heading').id
+'heading' -->
+
+
+
+
+<!--  -->
+<!-- 
+document.getElementById('heading').getAttribute('class')
+'heading1'
+document.getElementById('heading').setAttribute('class','test') -->
+
+<!-- heading.style.backgroundColor='green'
+'green' -->
+
+
+<!-- heading.style.padding='20px'
+
+
+
+
+
+
+
+
+    //document.getElementById('para').innerText
+'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam voluptatem facere possimus aperiam consequatur, omnis sit? Alias, explicabo!'
+document.getElementById('para').innerHTML
+'\n        Lorem ipsum dolor sit \n        amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam \n        voluptatem \n        facere possimus aperiam consequatur, omnis sit? Alias, explicabo!\n    '
+document.getElementById('para').textContent
+'\n        Lorem ipsum dolor sit \n        amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam \n        voluptatem \n        facere possimus aperiam consequatur, omnis sit? Alias, explicabo!\n    '
+
+
+
+//para.innerHTML
+'\n        Lorem ipsum dolor sit \n       <span style="display: none"> amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam \n        voluptatem </span>\n        facere possimus aperiam consequatur, omnis sit? Alias, explicabo!\n    '
+para.innerText
+'Lorem ipsum dolor sit facere possimus aperiam consequatur, omnis sit? Alias, explicabo!'
+para.TextContent
+undefined
+para.textContent
+'\n        Lorem ipsum dolor sit \n        amet consectetur, adipisicing elit. Quibusdam dolorem maxime ab. Nam quis, quae porro sapiente neque explicabo ipsa quam \n        voluptatem \n        facere possimus aperiam consequatur, omnis sit? Alias, explicabo!\n 
+
+
+
+
+//the difference between textContent and innerText is that innerTextShows the content who display the user
+//nut the textContent shows all over content who are display none also
+
+
+//and .innerHtml also gives the tag with content
+
+
+///////////////////////////////////////////
+
+
+document.querySelector('h2')
+)
+   <h2>Ahsan  Khan</h2>
+   only select the 1st element of h2
+
+   //////////////////////
+   document.querySelectorAll('h2')
+   //select all h2 tags
+
+///////////////////////////////////////
+
+   document.querySelector('input[type="password"]')
+<input type=​"password">​
+
+//  <input type="password">
+
+///////////////////////////////////////////
+
+
+
+var ol=document.querySelector('ol')
+ol.querySelector('li')
+
+<li>one</li>
+
+
+
+
+
+//////////////////////////////
+ol.querySelectorAll('li')
+NodeList(3) [li, li, li]
+0
+: 
+li
+1
+: 
+li
+2
+: 
+li
+length
+: 
+3
+[[Prototype]]
+: 
+NodeList
+
+///////////////////////////////////////////////
+
+
+var ol=document.querySelector('ol')
+ol.querySelector('li')
+<li>​…​</li>​::marker​"one"</li>​
+ol.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+var li=ol.querySelectorAll('li')
+undefined
+li.style.color='blue'
+VM1019:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:15
+(anonymous) @ VM1019:1
+li[0].style.color='blue'
+'blue'
+
+////////////////////////////////////////////////////
+
+
+li[0].style.color='blue'
+'blue'
+li.forEach((l)=>{
+    l.style.color='red'
+})
+
+////////////////////////////
+
+
+
+
+
+
+
+
+
+li.forEach((l)=>{
+   console.log(l)
+})
+VM1236:1 Uncaught TypeError: li.forEach is not a function
+    at <anonymous>:1:4
+
+
+        .foreach is not worked in html collection because li is an heml collection
+
+
+
+
+//////////////////////////////////
+
+
+
+so we used this and convert into array
+
+var convertarray=new Array(li)
+undefined
+console.log(convertarray)
+VM1661:1 [HTMLCollection(3)]0: HTMLCollection(3) [li.list, li.list, li.list]length: 1[[Prototype]]: Array(0)
+undefined
+convertarray.forEach((i)=>{
+    console.log(i)
+})
+VM1719:2 HTMLCollection(3) [li.list, li.list, li.list]0: li.list1: li.list2: li.listlength: 3[[Prototype]]: HTMLCollection
+undefined
+convertarray.forEach((i)=>{
+    i.style.color="blue"
+})
+
+//////////////////////////
+
+
+
+
+p.forEach((i)=>{
+  i.style.color='red'
+})
+undefined
+p.forEach((i)=>{
+  i.innerHTML='red'
+})
+
+//i used this in wikipedia website
+
+
+
+
+
+
+
+
+
